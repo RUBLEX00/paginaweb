@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1c1e53;
+    transition: color 0.5s ease; 
+}
+
+a:hover{
+    color:#9e5add;
+}
+
+h5{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav .logo,
+footer.logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a,
+footer.logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+nav .logo img,
+footer .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+nav ul, 
+footer .top ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav button{
+    color: #1c1e53;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: #5e3bee;
+    border-color: #5e3bee;
+    color: #fff;
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main{
+    background-color: #2e3752;
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .left h3 span{
+    color: #5e3bee;
+}
+
+.main .left p{
+    color: #e7e8ee;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main .left button{
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5e5bee;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.main .right img{
+    border-radius: 50px;
+    width: 700px;
+}
+
+.skills{
+    padding: 110px 85px 0;
+}
+
+.skills h3, .about .right h3, .portafolio .header h3{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skills-items{
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skills-items .item{
+    background-color: #68a2d8;
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-items .item:hover{
+    border-color: #5e5bee;
+}
+
+.skills .skills-items .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skills-items .item .icon{
+    font-size: 26px;
+    color: #006b6a;
+}
+
+.skills .skills-items .item h4, .portafolio .portfo-items .item .info h4{
+    font-size: 18px;
+}
+
+.skills .skills-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1c1e53;
+}
+
+.about{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left{
+    background-color: #065b6e;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.about .left img{
+    border-radius: 50px;
+    width: 500px;
+}
+
+.about .right P{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.portafolio{
+  background-color: #2e3752;
+  padding: 110px 85px;
+}
+
+.portafolio .header{
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.portafolio .header button{
+    background-color: #478a7b;
+    padding: 10px 20px;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.portafolio .header button a{
+    text-decoration: none;
+    color: #282938;
+    transition: color 0.5s ease;
+}
+
+.portafolio .header button a:hover{
+    color: #e7e8ee;
+}
+
+.portafolio .header button i{
+    font-size: 26px;
+}
+
+.portafolio .portfo-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portafolio .portfo-items .item{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+}
+
+.portafolio .portfo-items .item:hover{
+    border-color: #7756d8;
+}
+
+.pdf-frame{
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 20px ;
+    margin: 0 auto;
+    display: block;
+}
+
+.portafolio .portfo-items .item img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.portafolio .portfo-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.portafolio .portfo-items .item .info p{
+    font-size: 13px;
+}
+
+.portafolio .portfo-items .item .info a{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #5e3bee;
+}
+
+.portafolio .portfo-items .item .info a i{
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top, footer .buttom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .separator{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .buttom p{
+    font-size: 12px;
+}
+
+footer .buttom .links a{
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main .left h5{
+        font-size: 18px;
+    }
+    
+    main .left h3{
+        font-size: 36px;
+    }
+
+    .main .left p{
+        font-size: 18px;
+    }
+
+    .main .right img{
+        width: 380px;
+    }
+
+    .skills .skills-items{
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skills .skills-items .item{
+        width: 49%;
+    }
+
+    .about .left img{
+        width: 370px;
+    }
+
+    .skills h3, .about .right h3, .portafolio .header h3{
+    font-size: 32px;
+    }
+
+    .about .right p{
+        font-size: 15px;
+    }
+
+    footer .top ul{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+    
+    .main{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portafolio .portfo-items{
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portafolio .portfo-items .item{
+        width: 48%;
+    }
+
+    footer .top ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+    
+    nav.open ul{
+        display: flex;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+    .main{
+        padding: 42px;
+    }
+
+    .skills{
+        padding: 85px 42px 0;
+    }
+
+    .skills .skills-items{
+        gap: 8px;
+    }
+
+    .about{
+        padding: 85px 42px;
+    }
+
+    .portafolio{
+        padding: 60px 42px;
+    }
+
+    .portafolio .portfo-items{
+        gap: 18px;
+    }
+
+    footer{
+        padding: 85px 42px;
+    }
+
+    footer .buttom{
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav .logo a{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 32px;
+    }
+
+    .main .left p{
+        font-size: 16px;
+    }
+
+    .main .left button{
+        width: 100%;
+    }
+
+    .skills .skills-items .item{
+        width: 100%;
+    }
+
+    .portafolio .header button{
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .portafolio .portfo-items .item{
+        width: 80%;
+    }
+}
